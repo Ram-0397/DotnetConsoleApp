@@ -8,18 +8,15 @@ namespace FlightSchedulerApp.Services
     // Responsible for printing the flight schedule for Day 1 and Day 2
     public class FlightScheduleService
     {
-
         int maxOrders;
         List<string> flightDestinations ;
         string origin;
-
         public FlightScheduleService(int _maxOrders, List<string> _flightDestinations, string _origin)
         {
             maxOrders = _maxOrders;
             flightDestinations = _flightDestinations;
             origin = _origin;
         }
-
         public void PrintFlightSchedule(Dictionary<string, Dictionary<string, string>> orders)
         {
             int flightNumber = 0;

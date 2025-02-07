@@ -7,10 +7,8 @@ using System.IO;
 // Entry point for the program
 class Program
 {
-
     static void Main()
     {
-
         // Consider this as Configs for the given problem 
         const int MAX_ORDERS = 20;
         List<string> flightDestinations = new List<string> { "YYZ", "YYC", "YVR" };
@@ -21,8 +19,6 @@ class Program
         string jsonContent = File.ReadAllText(filePath);
         var orders = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(jsonContent);
 
-        
-        
         // User Story 1 - Print trip itineraries (only 2 days for a maximum of 6 flights)
         Console.WriteLine("Running User Story 1, expected Output:");
         Console.WriteLine();
