@@ -78,11 +78,10 @@ namespace FlightSchedulerApp.Services
             foreach (var entry in flightSchedule)
                 
             {
-                Console.WriteLine($"Day {entry.Key}:");
                 foreach (var flight in entry.Value)
                 {
                      //Print flight details
-                     Console.WriteLine($"Flight: {++flightNumber}, Departure: {origin}, Arrival: {flight}, Day: {entry.Key}");
+                     Console.WriteLine($"Flight: {++flightNumber}, departure: {origin}, arrival: {flight}, day: {entry.Key}");
                 }
             }
             
