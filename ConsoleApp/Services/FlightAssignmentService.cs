@@ -26,6 +26,7 @@
 
         // Create flights for each day dynamically based on totalDays
         var dayFlights = new Dictionary<int, List<Tuple<string, string>>>();
+        
 
         // Assign flights for each day
         for (int day = 1; day <= totalDays; day++)
