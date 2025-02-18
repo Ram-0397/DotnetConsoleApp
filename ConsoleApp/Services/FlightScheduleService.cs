@@ -6,8 +6,10 @@ using Newtonsoft.Json;
 namespace FlightSchedulerApp.Services
 {
     // Responsible for printing the flight schedule for Day 1 and Day 2
-    public class FlightScheduleService
+     public class FlightScheduleService
     {
+
+        int test;
         int maxOrders;
         List<string> flightDestinations ;
         string origin;
